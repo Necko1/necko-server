@@ -1,0 +1,11 @@
+[package]
+name = "necko-core"
+version.workspace = true
+edition.workspace = true
+
+[[bin]]
+name = "necko-core"
+path = "src/main.rs"
+
+[dependencies]
+necko-protocol = { path = "../necko-protocol" }

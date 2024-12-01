@@ -1,0 +1,22 @@
+[workspace]
+resolver = "2"
+members = [
+    "lib",
+    "necko-core", 
+    "necko-protocol",
+]
+
+[workspace.package]
+version = "0.1.0"
+edition = "2021"
+
+[profile.dev]
+opt-level = 1
+
+[profile.release]
+opt-level = 3
+codegen-units = 1
+lto = "fat"
+debug = false
+
+[workspace.dependencies]

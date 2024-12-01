@@ -1,0 +1,8 @@
+[package]
+name = "necko-server"
+version.workspace = true
+edition.workspace = true
+
+[dependencies]
+necko-core = { path = "../necko-core" }
+necko-protocol = { path = "../necko-protocol" }
