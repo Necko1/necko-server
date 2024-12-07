@@ -8,4 +8,7 @@ name = "necko-core"
 path = "src/main.rs"
 
 [dependencies]
+tokio = { version = "1.42.0", features = ["rt", "rt-multi-thread", "macros", "net", "sync", "io-util"] }
+bytes = "1.9.0"
+crossbeam = "0.8.4"
 necko-protocol = { path = "../necko-protocol" }
