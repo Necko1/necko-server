@@ -17,7 +17,7 @@ impl From<VarInt> for NextState {
             1 => NextState::Status,
             2 => NextState::Login,
             3 => NextState::Transfer,
-            _ => todo!("VarInt value out of range")
+            _ => unimplemented!("VarInt value out of range")
         }
     }
 }

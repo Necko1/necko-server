@@ -7,7 +7,7 @@ members = [
 ]
 
 [workspace.package]
-version = "0.1.0"
+version = "0.1.1"
 edition = "2021"
 
 [profile.dev]
@@ -20,3 +20,4 @@ lto = "fat"
 debug = false
 
 [workspace.dependencies]
+log = "0.4.22"

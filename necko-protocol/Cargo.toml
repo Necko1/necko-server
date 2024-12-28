@@ -4,3 +4,6 @@ version.workspace = true
 edition.workspace = true
 
 [dependencies]
+bytes = "1.9.0"
+uuid = { version = "1.11.0", features = ["v4"] }
+log.workspace = true

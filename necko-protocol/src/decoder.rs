@@ -57,11 +57,7 @@ impl Decoder {
     pub fn append_bytes(&mut self, bytes: BytesMut) {
         self.buffer.unsplit(bytes);
     }
-
-    pub fn append_slice(&mut self, bytes: &[u8]) {
-        self.buffer.extend_from_slice(bytes);
-    }
-
+    
     pub fn take_capacity(&mut self) -> BytesMut {
         self.buffer.split_off(self.buffer.len())
     }

@@ -5,8 +5,6 @@ use crate::types::VarIntType;
 
 pub struct StatusRequestServerbound;
 
-
-
 impl Packet for StatusRequestServerbound { const PACKET_ID: VarIntType = 0x00; }
 
 impl ServerboundPacket for StatusRequestServerbound {

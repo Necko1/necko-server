@@ -1,7 +1,7 @@
 use std::io::{Error, ErrorKind, Write};
 use bytes::{BufMut, BytesMut};
 use crate::buffer::PacketByteBuffer;
-use crate::packets::{ClientboundPacket, Packet, MAX_PACKET_SIZE};
+use crate::packets::{ClientboundPacket, MAX_PACKET_SIZE};
 use crate::types::VarInt;
 
 #[derive(Debug)]
